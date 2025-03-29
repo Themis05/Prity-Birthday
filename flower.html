@@ -348,17 +348,22 @@
     <script src="js/main.js"></script>
 
     <audio id="musikadit" loop>
-      <source src="thing.mp3" type="audio/mpeg">
-    </audio>
-    
-    <script>
-      document.addEventListener('click', function() {
-        var audio = document.getElementById('musikadit');
-        audio.play().catch(error => {
-          console.log("Gagal memutar audio:", error);
-        });
-      }, { once: true });
-      </script>
+  <source src="thing.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', function playMusic() {
+    var audio = document.getElementById('musikadit');
+
+    if (audio.paused) { // Pastikan hanya dijalankan jika audio belum diputar
+      audio.play().then(() => {
+        document.removeEventListener('click', playMusic); // Hapus event listener setelah berhasil play
+      }).catch(error => {
+        console.log("Gagal memutar audio:", error);
+      });
+    }
+  });
+</script>
 
   </body>
 </html>

@@ -19,7 +19,7 @@ loginForm.addEventListener('submit', (e) => {
 
     if (usernameInput === "Prity Aisyah Putri Evita" && passwordInput === "April") {
         alert("Login berhasil! Happy Birthdayyy Prity!");
-        window.location.href = "../index.html"; 
+        window.location.href = "../Project.html"; 
     } else {
         alert("Hayoo dilarang masuk selain Prity!");
     }

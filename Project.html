@@ -193,6 +193,21 @@
  
 <!-- FOOTER END -->
 
+    <button id="ctaButton" onclick="startMusicAndNavigate()">Klik Saya</button>
+
+<script>
+  let isNavigating = false; // Mencegah double-click
+
+  function startMusicAndNavigate() {
+    if (isNavigating) return; // Kalau sudah diklik, abaikan klik berikutnya
+    isNavigating = true;
+
+    sessionStorage.setItem('audioPlayed', 'true'); // Tandai bahwa musik sudah dimulai
+    window.location.href = "halaman-baru.html"; // Ganti dengan URL halaman tujuan
+  }
+</script>
+
+
 
     <!-- FEATHER ICONS -->
     <script>

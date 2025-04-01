@@ -347,24 +347,24 @@
     </div>
     <script src="js/main.js"></script>
 
-    <audio id="musikadit" loop>
+<audio id="musikadit" loop>
   <source src="thing.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-  var audio = document.getElementById('musikadit');
+  document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("musikadit");
 
-  // Cek apakah musik sudah diputar di halaman sebelumnya
-  if (sessionStorage.getItem('audioPlayed')) {
-    console.log("Musik sudah dimainkan sebelumnya, tidak akan diputar lagi.");
-  } else {
-    audio.play().then(() => {
-      sessionStorage.setItem('audioPlayed', 'true'); // Simpan status pemutaran
-    }).catch(error => {
-      console.log("Gagal memutar audio:", error);
-    });
-  }
+    if (!sessionStorage.getItem("audioPlayed")) {
+      audio.play().then(() => {
+        sessionStorage.setItem("audioPlayed", "true"); // Set flag agar tidak main dua kali
+      }).catch(error => {
+        console.log("Gagal memutar audio:", error);
+      });
+    }
+  });
 </script>
+
 
 
 

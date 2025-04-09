@@ -86,7 +86,7 @@ body {
     color: lightpink;
 }
 
-#menu {
+#hamburger-menu {
     display: none;
 }
 
@@ -425,7 +425,7 @@ footer .credit a{
     html {
         font-size: 62.5%;
     }
-    #menu {
+    #hamburger-menu {
         display: inline-block;
     }
     

@@ -22,7 +22,7 @@ const modalDescription = document.querySelector('#modal-description');
 const itemDetailButtons = document.querySelectorAll('.item-detail-button');
 
 const productDescriptions = {
-    "Artist": "She can draw, n she's really good at it???!! n if im not mistaken dia pernah bikin kayak komik buat temennya yang lagi ultah?? how sweet is thatt??",
+    "Artist": "She can draw, n she's really good at it???!! n if im not mistaken dia pernah bikin kayak komik buat temennya yang lagi ultah?? how sweet is thatt?? Honestly, out of all the hobbies, I honestly didn't expect that she could draw",
     "Soft Spoken": "TAPI BOONG WOKAWKOAOKA. kagak ada soft spoken soft spokennya ni orang tua, jangan ketipu ama tubuh mungil dan wajah polosnya, sekali dia bersuara hilang sudah ekspetasimu itu. Brandingnya doang suka ama anak kecil pdhl ma kagak family friendly. Apalagi kalau badmood beehh semua orang dia anjing anjingin kali",
     "DAMN": "One word to describe her OOTD is ‘damn.’ Just look at this photo bro, SHE LOOKS SO FRICKING COOLL??!! Sometimes she looks super cool, and other times she’s just insanely cute. YKW, every time I see her, I always want to compliment her outfit, but I know it’d be awkward, cause I'm suck at giving compliments",
     "English Lover": "first impression aku ke orang ini adalah 'gila englishnya gacor banget', n then everythings make sense, ternyata dia pernah ke kampung inggris selama 6 bulan?? trus dia udah punya experience ngajar 3 tahun?? keren ga?? KEREN BANGET LAH GILAAAAAA (makanya aku nerima tawaran buat jadi kadiv speech, biar bisa kek dia hehe)",
